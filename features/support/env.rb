@@ -26,10 +26,5 @@ Capybara.configure do |config|
   config.app_host = SERVER_URL
 end
 
-# HOOKS
-Before do |scenario|
-  visit SERVER_URL
-end
-
 After do |scenario|
 end

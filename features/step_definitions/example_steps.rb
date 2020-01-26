@@ -2,7 +2,7 @@ $firstname='Ken'
 $lastinitial='Z'
 
 When(/^I am on the homepage$/) do
-  expect(page.current_path).to eq('/')
+  visit SERVER_URL
 end
 
 And(/^I submit as a ([^"]*)$/) do | gender|
